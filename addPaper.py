@@ -14,33 +14,6 @@ def getPrinters():
     printers = [p for p in _p if p]
     return printers
 
-new_paper ={
-    '*DefaultPageSize':[
-        '*PageSize 80x100mm": "<</PageSize[226.772 283.465]/ImagingBBox null>>setpagedevice"',
-        '*PageSize 100x80mm": "<</PageSize[283.465 226.772 ]/ImagingBBox null>>setpagedevice"',
-        '*PageSize 100x40mm": "<</PageSize[283.465 113.386 ]/ImagingBBox null>>setpagedevice"',
-        '*PageSize 50x40mm": "<</PageSize[141.732 113.386 ]/ImagingBBox null>>setpagedevice"'
-        ],
-    '*DefaultPageRegion':[
-        '*PageRegion 80x100mm": "<</PageSize[226.772 283.465]/ImagingBBox null>>setpagedevice"',
-        '*PageRegion 100x80mm": "<</PageSize[283.465 226.772]/ImagingBBox null>>setpagedevice"',
-        '*PageRegion 100x40mm": "<</PageSize[283.465 113.386]/ImagingBBox null>>setpagedevice"',
-        '*PageRegion 50x40mm": "<</PageSize[141.732 113.386]/ImagingBBox null>>setpagedevice"'
-    ],
-    '*DefaultImageableArea':[
-        '*ImageableArea 80x100mm": "0 0 226.772 283.465"',
-        '*ImageableArea 100x80mm": "0 0  283.465 226.772"',
-        '*ImageableArea 100x40mm": "0 0  283.465 113.386"',
-        '*ImageableArea 50x40mm": "0 0  141.732 113.386"'
-    ],
-    '*DefaultPaperDimension':[
-        '*PaperDimension 80x100mm": "226.772 283.465"',
-        '*PaperDimension 100x80mm": "283.465 226.772"',
-        '*PaperDimension 100x40mm": "283.465 113.386"',
-        '*PaperDimension 50x40mm": "141.732 113.386"'
-    ]
-}
-
 def mmToPoints(val):
     '''
     72 points = 1inch = 2.54cm
